@@ -3,12 +3,17 @@
   "version": "1.0",
   "description": "Streamhub dashboard directly in Chrome!",
   "manifest_version": 2,
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+    "*://*.streamhub.watch"
+  ],
   "background": {
     "scripts": ["background.js"]
   },
-  "permissions": [
-    "activeTab"
-  ],
   "browser_action": {
     "default_popup": "popup.html"
   }
